@@ -1,4 +1,4 @@
-/*
+///*
 document.write('\
 <template class="header_template">\
   <div class="logosec">\
