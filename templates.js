@@ -40,6 +40,7 @@ document.write('\
 </div>\
 </template>');
 //*/
+/*
 const fs = require('fs')
 var text = "";
 fs.readFile('template.txt', 'utf-8', (err,data) => {
@@ -50,3 +51,4 @@ fs.readFile('template.txt', 'utf-8', (err,data) => {
 
 document.write(text);
 
+*/
