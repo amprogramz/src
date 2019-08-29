@@ -12,6 +12,13 @@ oarnge      #f9ad15
 darkoarange #bd8617
 dark        #36270A
 */
+#header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+}
 .logosec {
   position: -webkit-sticky;
   position: sticky;
