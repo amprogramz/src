@@ -1,0 +1,121 @@
+/*
+  CSS Style Sheet
+  edited_by:  Alec McDaugale
+  created_by: Deb Harding
+*/
+/* 
+The styles are based on the complementary color scheme
+https://www.w3schools.com/colors/colors_complementary.asp 
+white       #e3e7fa
+blue        #2547ef
+oarnge      #f9ad15
+darkoarange #bd8617
+dark        #36270A
+*/
+.logosec {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #36270A;
+  color: #e3e7fa;
+  z-index: 1;
+}
+
+.padding .bullet {
+  position: relative;
+  left: 20px;
+  z-index: -1;
+}
+.centered_image {
+  position: relative;
+  right: 20%;
+  left: 20%;
+}
+.footer #license {
+  color: #e3e7fa;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #e3e7fa;
+  color:#34091C;
+}
+
+h1 {
+  color:#2547ef;
+}
+
+h2 {
+  color:#bd8617;
+}
+
+a {
+  color:#36270A;
+  
+}
+
+/* Styling for the naviation menu*/
+.navbar {
+  overflow: hidden;
+  background-color: #36270A; /* sets the color of the main nav bar*/
+}
+/* This styles the anchor element words on main nav bar*/
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: #e3e7fa;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: #e3e7fa;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #2547ef;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #36270A;
+  border-left-style: solid;
+  border-width: 10px;
+  border-color: #2547ef;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: #e3e7fa;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #2547ef;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Footer styling the footer */
+.footer{  
+  padding: 10px;
+  margin-top: 20px;
+  color: #e3e7fa;
+  background-color:#36270A;  
+}
