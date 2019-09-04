@@ -28,9 +28,11 @@ dark        #36270A
   z-index: 1;
 }
 
-.padding .bullet {
+.padding {
+  font: inherit;
+  font-size: 19px;
   position: relative;
-  left: 20px;
+  left: 30px;
   z-index: -1;
 }
 .centered_image {
@@ -38,6 +40,7 @@ dark        #36270A
   right: 20%;
   left: 20%;
 }
+
 .footer #license {
   color: #e3e7fa;
 }
