@@ -76,6 +76,10 @@ p {
   text-align: justify;
   width: 80%;
 }
+.wrap_txt_img {
+  font-size: 20px;
+  text-align: justify;
+}
 
 /* Styling for the naviation menu*/
 .navbar {
