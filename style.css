@@ -35,14 +35,17 @@ dark        #36270A
   left: 30px;
   z-index: -1;
 }
-.centered_image {
+.centered_image {  
   position: relative;
-  right: 20%;
-  left: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
 }
 .right_image {
-  position: wrap;
-  ;
+  position: relative;
+  margin-right: 0px;
+  margin-left:auto;
+  width: 40%
 }
 
 .footer #license {
