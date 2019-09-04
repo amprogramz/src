@@ -40,6 +40,10 @@ dark        #36270A
   right: 20%;
   left: 20%;
 }
+.right_image {
+  position: wrap;
+  ;
+}
 
 .footer #license {
   color: #e3e7fa;
@@ -127,6 +131,9 @@ p {
   display: block;
 }
 
+#term_logo {
+  background-color: #000000;
+}
 /* Footer styling the footer */
 .footer{  
   padding: 10px;
