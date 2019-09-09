@@ -1,5 +1,32 @@
 /* If you're feeling fancy you can add interactivity 
     to your site with Javascript */
+function handleConversion()
+{
+  var user_input = document.getElementById("input_num").value;
+  var num = parseInt(user_input);
+ /* if (isNaN(user_input))
+  {
+    document.getElementById("converted_txt").innerHTML = "Please enter a number."; 
+  }
+  else
+  {*/
+  
+    if(document.getElementById("binary").checked)
+    {
+      convertToBinary("converted_txt", num, 2);
+    }
+    else if(document.getElementById("hexidecimal").checked)
+    {
+      convertToBinary("converted_txt", num, 16)
+    }
+  //}
+}
+
+function convertToBinary(id, num, base)
+{
+  var converted = parseInt(num, 10).toString(base);
+  document.getElementById(id).innerHTML = converted;
+}
 
 
 function getTemplate(id, class_name)
