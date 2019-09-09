@@ -1,31 +1,43 @@
 /* If you're feeling fancy you can add interactivity 
     to your site with Javascript */
+    
+/** 
+ @function - handleConversion() 
+ @description - converts user input into hex or dex.
+ 
+ @param - 
+*/
 function handleConversion()
 {
   var user_input = document.getElementById("input_num").value;
-  var num = parseInt(user_input);
- /* if (isNaN(user_input))
+  var num;
+  
+  if(document.getElementById("binary").checked)
   {
-    document.getElementById("converted_txt").innerHTML = "Please enter a number."; 
+    num = convertBase(user_input, 2);
+    
+    setHTML("converted_txt", num);
+  }
+  else if(document.getElementById("hexidecimal").checked)
+  {
+    num = convertBase(user_input, 16);
+    setHTML("converted_txt", num);
   }
   else
-  {*/
-  
-    if(document.getElementById("binary").checked)
-    {
-      convertToBinary("converted_txt", num, 2);
-    }
-    else if(document.getElementById("hexidecimal").checked)
-    {
-      convertToBinary("converted_txt", num, 16)
-    }
-  //}
+  {
+    setHTML("converted_txt", "Pick a conversion type.");
+  }
 }
 
-function convertToBinary(id, num, base)
+function convertBase(num, base)
 {
   var converted = parseInt(num, 10).toString(base);
-  document.getElementById(id).innerHTML = converted;
+  return converted;
+}
+
+function setHTML(id, text)
+{
+  document.getElementById(id).innerHTML = text;
 }
 
 

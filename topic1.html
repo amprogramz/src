@@ -15,7 +15,66 @@
      getHeader(); 
   </script>
   
-  <h1>Topic 1</h1>
+  <h1>Numbering Systems</h1>
+  <h2>(Base 10) Decimal</h2>
+  <p>
+    Base 10 is our standard decimal numbering system. It is the numbering system that you are familiar with
+    and probably use on a day to day basis. the base 10 numbering system contains 10 charecters, hint the 
+    name base ten, which includes numbers 0-9. These then repeat themselve once it is done.
+  </p>
+  
+  <h2>(Base 2) Binary</h2>
+  <p>
+    Base 2 is the numbering system more comonly refered to as binary. Notice the root word, bi, 
+    which is the latin word for two. So as you may have guessed, this numbering system only
+    contains 2 ch, 0 and 1. Basically this can be looked at as the electrical sates inside of a 
+    computer, either they are on or off. We used this to tell the computer that something is 
+    either true or false. Now, you may be asking how do we get the number 5 with 0 and 1, well
+    that is actually quite simple. So each bit is one 1 or 0. 1 byte is composed of 8 bits. The
+    value of a bit in this byte, starting from the right, is 1, and is multiplied by two each time 
+    you progress to the left. So this makes it like this:
+    <br>
+    <br>
+    128  64   32   16      8    4    2    1   <br>
+    0    0    0    0       0    0    0    0   <br>
+    <br>
+    So knowing that this is the case, we know that our first byte has a maximum of 255 and a minimum
+    value of 0. So lets say that we want do say the number 75, we could represent this by totaling
+    up the bits that we set to true.
+    <br>
+    <br>
+    128  64   32   16      8    4    2    1   <br>
+    0    1    0    0       1    0    1    1   <br>
+    <br>
+    Therefor we now have the value of 75 in binary, but what if we wanted to do 175?
+    <br>
+    <br>
+    128  64   32   16      8    4    2    1   <br>
+    1    0    1    0       1    1    1    1   <br>
+    <br>
+    So this is simple, as long as you total the value of the bits that are true, you can read binary. 
+    <br>
+  </p>
+  
+  <h2>(Base 16) Hexidecimal</h2>
+  <p>
+    Hexidecimal is a numbering system that has a base of 16. As im sure you have already guessed,
+    how can we get 16 charecters when we only have a total on 10 using our numbering system. This
+    is true, but we also have an alphabet containing 26 charecters not including special charecters.
+    This means that we could now technically have a numbering system of base36 if we wanted to,
+    but befor we get to crazy, what does a base 16 numbering system look like.
+    <br>
+    <br>
+    DEC    0   1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16  17  27
+    HEX    0   1   2   3   4   5   6   7   8   9   A   B   C   D   E   F   10  11  1B
+    
+   <br>
+   <br>
+   Pretty crazy right. basically 0-15 or 0-F are used repeatedly to represent any number you want it
+   to. The advantage to using hexidecimal is that you can represent larger values with less data.
+   <br>
+    
+   
   <h2>Decimal to Hex/Binary Calc</h2>
 
   <p id="converted_txt">Enter a decimal value to convert.</p>
