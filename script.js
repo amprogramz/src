@@ -41,6 +41,7 @@ function initAJAX()
   try
   {
     ajaxObject = new XMLHttpRequest();
+    console.log("AJAX init...");
   }
   catch(e)
   {
@@ -53,17 +54,20 @@ function initAJAX()
 function getHTML_Template(fd)
 {
   var ajax = initAJAX();
-    
+  console.log("Starting ajax. fd=" + fd);
   ajax.onreadystatechange = function()
   {
     if (this.readyState == 4 && this.status == 200)
     {
-        document.getElementById(fd).innerHTML = this.responseText;
+        console.log("Appending elm to document.");
+        document.getElementById(fd).innerHTML = this.setHTML;
         //document.write(toString(this.responseText));
     }
   };
   
+  console.log("Ajax get.");
   ajax.open("GET", "template.html", true);
+  console.log("ajax send.");
   ajax.send();
 }
 
