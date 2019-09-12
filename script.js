@@ -35,6 +35,38 @@ function convertBase(num, base)
   return converted;
 }
 
+function initAJAX()
+{
+  var ajaxObject;
+  try
+  {
+    ajaxObject = new XMLHttpRequest();
+  }
+  catch(e)
+  {
+    
+  }
+  return ajaxObject;
+}
+
+
+function getHTML_Template(fd)
+{
+  var ajax = initAJAX();
+    
+  ajax.onreadystatechange = function()
+  {
+    if (this.readyState == 4 && this.status == 200)
+    {
+        document.getElementById(fd).innerHTML = this.responseText;
+        //document.write(toString(this.responseText));
+    }
+  };
+  
+  ajax.open("GET", "template.html", true);
+  ajax.send();
+}
+
 function setHTML(id, text)
 {
   document.getElementById(id).innerHTML = text;
@@ -50,7 +82,7 @@ function getTemplate(id, class_name)
 
 function getHeader()
 {
-  getTemplate("header", "header_template")
+  getTemplate("headerThing", "header_template")
 }
 
 function getFooter()
