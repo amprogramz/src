@@ -80,7 +80,7 @@ function setHTML(id, text)
 function getTemplate(id, class_name)
 {
   var header = document.getElementsByClassName(class_name)[0];
-  var header_coppy = header.content.cloneNode(true);
+  var header_coppy = header[0].content.cloneNode(true);
   document.getElementById(id).appendChild(header_coppy);  
 }
 
