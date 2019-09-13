@@ -60,7 +60,7 @@ function getHTML_Template(fd)
     if (this.readyState == 4 && this.status == 200)
     {
         console.log("Appending elm to document.");
-        document.getElementById(fd).innerHTML = this.getAllResponseHeaders;
+        document.getElementById(fd).innerHTML = this.getElementsByClassName("header_template");
         //document.write(toString(this.responseText));
     }
   };
