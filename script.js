@@ -60,7 +60,7 @@ function getHTML_Template(fd)
     if (this.readyState == 4 && this.status == 200)
     {
         var response, htmlDoc;
-        htmlDoc = this.responseText;
+        htmlDoc = this.responseXML;
         response = htmlDoc.getElementsByClassName("header_template");
         console.log("Appending elm to document.");
         document.getElementById(fd).innerHTML = response;
