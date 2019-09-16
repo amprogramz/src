@@ -53,7 +53,7 @@ function initAJAX()
 
 function getHTML_Template(fd)
 {
-  var ajax = initAJAX();
+  var ajax = new XMLHttpRequest();// initAJAX();
   console.log("Starting ajax. fd=" + fd);
   ajax.onreadystatechange = function()
   {
