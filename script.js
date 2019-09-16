@@ -72,6 +72,7 @@ function getHTML_Template(fd)
   ajax.open("GET", "template.html", true);
   console.log("ajax send.");
   ajax.send();
+  setTimeout(3000);
 }
 
 function setHTML(id, text)
