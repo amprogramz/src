@@ -53,7 +53,7 @@ function initAJAX()
 
 function getHTML_Template(fd)
 {
-  var ajax = new XMLHttpRequest();// initAJAX();
+  var ajax =  initAJAX(); //new XMLHttpRequest();//
   console.log("Starting ajax. fd=" + fd);
   ajax.onreadystatechange = function()
   {
@@ -64,7 +64,6 @@ function getHTML_Template(fd)
         response = htmlDoc.getElementByClassName("logosec");
         console.log("Appending elm to document.");
         document.getElementById(fd).innerHTML = htmlDoc;
-        //document.write(toString(this.responseText));
     }
   };
   
@@ -99,17 +98,4 @@ function getFooter()
   getTemplate("foot", "footer_template")
 }
 
-/* This function is called  on the mouseover event
-obj is the parameter to know what object to change */ 
-function mOver(obj) {
-  /* innerHTML puts the text in inner object */
-  obj.innerHTML = "Thank You"
-}
 
-
-/* This function is called  on the mouseout event
-obj is the parameter to know what object to change */ 
-function mOut(obj) {
-   /* innerHTML puts the text in inner object */
-  obj.innerHTML = "Mouse Over Me"
-}
