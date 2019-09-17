@@ -73,6 +73,8 @@ function getHTML_Template(fd)
         htmlDoc = this.responseText;
         //response = htmlDoc.getElementByClassName("logosec");
         document.getElementById(fd).innerHTML = htmlDoc;
+        getHeader();
+        getFooter();
     }
   };
   
@@ -105,7 +107,7 @@ function getTemplate(id, class_name)
 */
 function getHeader()
 {
-  getTemplate("headerThing", "header_template")
+  getTemplate("header", "header_template")
 }
 
 /**
