@@ -61,7 +61,7 @@ function getHTML_Template(fd)
     {
         var response, htmlDoc;
         htmlDoc = this.responseText;
-        response = htmlDoc.getElementsByClassName("logosec");
+        response = htmlDoc.getElementByClassName("logosec");
         console.log("Appending elm to document.");
         document.getElementById(fd).innerHTML = htmlDoc;
         //document.write(toString(this.responseText));
