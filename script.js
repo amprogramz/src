@@ -108,7 +108,7 @@ function getTemplate(id, class_name)
 function getHeader()
 {
   //getTemplate("header", "header_template")
-  $().ready(function{
+  $(document).ready(function(){
     $("#header").load("template.html .logosec");
   });
 }
