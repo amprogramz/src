@@ -105,13 +105,16 @@ function setHTML(id, text)
 /**
   @function getHeader Calls getTemplate to retrieve the header.
 */
-//function getHeader()
-//{
+function getHeader()
+{
   //getTemplate("header", "header_template")
   //$(document).ready(function(){
    // $("#header").load("template.html .logosec");
   //});
-//}
+  $(document).ready(function(){
+      $("#header").load("template.html .logosec");
+    });
+}
 
 /**
   @function getfooter Calls getTemplate to retrieve the footer.
