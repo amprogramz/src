@@ -108,7 +108,9 @@ function getTemplate(id, class_name)
 function getHeader()
 {
   //getTemplate("header", "header_template")
-  $("#header").load("template.html .logosec")
+  $().ready(function{
+    $("#header").load("template.html .logosec");
+  });
 }
 
 /**
