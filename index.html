@@ -17,7 +17,7 @@
   <script>
     //getHTML_Template("template");
     //setTimeout(0, 10000);
-    getHeader("#header", "template.html .logosec");
+    getHTML("#header", "template.html .logosec");
     //$(document).ready(function(){
     //  $("#header").load("template.html .logosec");
    // });
@@ -75,10 +75,11 @@
       <br><br>
   </p>
 
-  <div id="foot"></div>
+  
   <script>
-//     getFooter(); 
+    getHTML("#foot", "template.html .footer") 
   </script>
+  <div id="foot"></div>
 
 <!-- End... -->
 </body>
