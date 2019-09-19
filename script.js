@@ -94,24 +94,24 @@ function setHTML(id, text)
   @function getTemplate Coppys html from witin a template 
                         to use elsewhere.  
 */
-function getTemplate(id, class_name)
+/*function getTemplate(id, class_name)
 {
   var header, header_coppy;
   header = document.getElementsByClassName(class_name)[0];
   header_coppy = header[0].content.cloneNode(true);
   document.getElementById(id).appendChild(header_coppy);  
 }
-
+*/
 /**
   @function getHeader Calls getTemplate to retrieve the header.
 */
-function getHeader()
-{
+//function getHeader()
+//{
   //getTemplate("header", "header_template")
   $(document).ready(function(){
     $("#header").load("template.html .logosec");
   });
-}
+//}
 
 /**
   @function getfooter Calls getTemplate to retrieve the footer.
