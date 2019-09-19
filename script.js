@@ -105,14 +105,17 @@ function setHTML(id, text)
 /**
   @function getHeader Calls getTemplate to retrieve the header.
 */
-function getHeader()
+function getHeader(local_item, external_file_item)
 {
   //getTemplate("header", "header_template")
   //$(document).ready(function(){
    // $("#header").load("template.html .logosec");
   //});
-  $(document).ready(function(){
-      $("#header").load("template.html .logosec");
+  //$(document).ready(function(){
+  //    $("#header").load("template.html .logosec");
+  //  });
+    $(document).ready(function(){
+      $(local_item).load(external_file_item);
     });
 }
 
