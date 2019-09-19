@@ -108,9 +108,9 @@ function setHTML(id, text)
 //function getHeader()
 //{
   //getTemplate("header", "header_template")
-  $(document).ready(function(){
-    $("#header").load("template.html .logosec");
-  });
+  //$(document).ready(function(){
+   // $("#header").load("template.html .logosec");
+  //});
 //}
 
 /**
