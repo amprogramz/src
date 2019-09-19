@@ -105,13 +105,13 @@ function getTemplate(id, class_name)
 /**
   @function getHeader Calls getTemplate to retrieve the header.
 */
-//function getHeader()
-//{
+function getHeader()
+{
   //getTemplate("header", "header_template")
   $(document).ready(function(){
     $("#header").load("template.html .logosec");
   });
-//}
+}
 
 /**
   @function getfooter Calls getTemplate to retrieve the footer.
