@@ -37,52 +37,6 @@ function convertBase(num, base)
 }
 
 /**
-  @function initAJAX Initialize the AJAZ object.
-  
-  @returns The AJAX object if possible.
-*/
-function initAJAX()
-{
-  var ajaxObject;
-  try
-  {
-    ajaxObject = new XMLHttpRequest();
-    console.log("AJAX init...");
-  }
-  catch(e)
-  {
-    
-  }
-  
-  return ajaxObject;
-}
-
-/**
-@function getHTML_Template Copys htm to another doccument.
- */
-function getHTML_Template(fd)
-{
-  var ajax =  initAJAX();
-
-  ajax.onreadystatechange = function()
-  {
-    if (this.readyState == 4 && this.status == 200)
-    {
-        var response, htmlDoc;
-        
-        htmlDoc = this.responseText;
-        //response = htmlDoc.getElementByClassName("logosec");
-        document.getElementById(fd).innerHTML = htmlDoc;
-        getHeader();
-        getFooter();
-    }
-  };
-  
-  ajax.open("GET", "template.html", true);
-  ajax.send();  
-}
-
-/**
   @function setHtml Sets the html using the DOM.
 */
 function setHTML(id, text)
@@ -91,19 +45,8 @@ function setHTML(id, text)
 }
 
 /**
-  @function getTemplate Coppys html from witin a template 
-                        to use elsewhere.  
-*/
-/*function getTemplate(id, class_name)
-{
-  var header, header_coppy;
-  header = document.getElementsByClassName(class_name)[0];
-  header_coppy = header[0].content.cloneNode(true);
-  document.getElementById(id).appendChild(header_coppy);  
-}
-*/
-/**
-  @function getHTML Calls getTemplate to retrieve the header.
+  @function getHTML Retrieves html attributes from another file and 
+            implements them localy using AJAX.
 */
 function getHTML(local_item, external_file_item)
 {
@@ -111,12 +54,4 @@ function getHTML(local_item, external_file_item)
   $(document).ready(function(){
     $(local_item).load(external_file_item);
   });
-}
-
-/**
-  @function getfooter Calls getTemplate to retrieve the footer.
-*/
-function getFooter()
-{
-  getTemplate("foot", "footer_template")
 }
