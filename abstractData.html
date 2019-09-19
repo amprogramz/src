@@ -2,9 +2,12 @@
 <html>
 <head>
   <title>Abstract Data</title>
+  
   <link rel="stylesheet" href="style.css">
   <script src="script.js"></script>
   <script src="templates.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
   <script>
     getHTML("#header", "template.html .logosec");
     getHTML("#foot", "template.html .footer");
@@ -13,8 +16,6 @@
 </head>
   
 <body>
-
-  <!-- Header Start-->
   <div id="header"></div>
   
   <h1>Numbering Systems</h1>
@@ -83,13 +84,8 @@
   <input type="radio" name="type" id="hexidecimal">hexidecimal
   <br>
   <button onclick="handleConversion()" id="btn_convert">convert</button>
-  
-  
-  <div id="foot"></div>
-  <script>
-     getFooter(); 
-  </script>
 
-<!-- the end of your webpage should always be the ending of your body and html tags -->
+  <div id="foot"></div>
+
 </body>
 </html>
