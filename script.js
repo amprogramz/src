@@ -103,12 +103,12 @@ function setHTML(id, text)
 }
 */
 /**
-  @function getHeader Calls getTemplate to retrieve the header.
+  @function getHTML Calls getTemplate to retrieve the header.
 */
 function getHTML(local_item, external_file_item)
 {
-  $.noConflict();
-  JQuery(document).ready(function($){
+  //$.noConflict();
+  $(document).ready(function(){
     $(local_item).load(external_file_item);
   });
 }
