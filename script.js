@@ -11,7 +11,6 @@ function handleConversion()
   if(document.getElementById("binary").checked)
   {
     num = convertBase(user_input, 2);
-    
     setHTML("converted_txt", num);
   }
   else if(document.getElementById("hexidecimal").checked)
@@ -47,6 +46,9 @@ function setHTML(id, text)
 /**
   @function getHTML Retrieves html attributes from another file and 
             implements them localy using AJAX.
+            
+  @param local_item The local elem you wish to set the HTML.
+  @param external_file_item The file you wish to coppy.
 */
 function getHTML(local_item, external_file_item)
 {
