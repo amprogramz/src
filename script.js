@@ -57,3 +57,10 @@ function getHTML(local_item, external_file_item)
     $(local_item).load(external_file_item);
   });
 }
+
+function animateLogo()
+{
+  $(document).ready(function(){
+    $("#logo").animate({width:"100%"}, "1000").animate({height:"40%"}, "1000");
+  });
+}
