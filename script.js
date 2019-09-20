@@ -61,6 +61,6 @@ function getHTML(local_item, external_file_item)
 function animateLogo()
 {
   $(document).ready(function(){
-    $("#logo").animate({width:"100%"}, "1000").animate({height:"40%"}, "1000");
+    $("#logo").animate({width:"100%"}, "10000").animate({height:"40%"}, "10000");
   });
 }
