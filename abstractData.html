@@ -79,12 +79,27 @@
 
   <input type="number" id="input_num" >
   <br>
-  <input type="radio" name="type" id="binary">binary
-  <br>
-  <input type="radio" name="type" id="hexidecimal">hexidecimal
+  <table>
+    <tr>
+      <th>Convert From</th>
+      <th>Convert To  </th>
+    </tr>
+    <tr>
+      <td><input type="radio" name="type" id="decimal_to">decimal</td>
+      <td><input type="radio" name="type" id="decimal">decimal</td>
+    </tr>
+    <tr>
+      <td><input type="radio" name="type" id="binary_to">binary</td>
+      <td><input type="radio" name="type" id="binary">binary</td>
+    </tr>
+    <tr>
+      <td><input type="radio" name="type" id="hexidecimal_to">hexidecimal</td>
+      <td><input type="radio" name="type" id="hexidecimal">hexidecimal</td>
+    </tr>
+  </table>
   <br>
   <button onclick="handleConversion()" id="btn_convert">convert</button>
-
+  </table>
   <div id="foot"></div>
 
 </body>
