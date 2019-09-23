@@ -6,21 +6,44 @@
 function handleConversion()
 {
   var user_input = document.getElementById("input_num").value;
+  var convert_from = -1;
+  var convert_to = -1;
   var num;
   
-  if(document.getElementById("binary").checked)
+  if (document.getElementById("decimal_from").checked)
   {
-    num = convertBase(user_input, 2);
-    setHTML("converted_txt", num);
+    convert_from = 10;
+  }
+  else if(document.getElementById("binary_from").checked)
+  {
+    convert_from = 2;
+  }
+  else if(document.getElementById("hexidecimal_from").checked)
+  {
+    convert_from = 16;
+  }
+  
+  if (document.getElementById("decimal").checked)
+  {
+    convert_to = 10;
+  }
+  else if(document.getElementById("binary").checked)
+  {
+    convert_to = 2;
   }
   else if(document.getElementById("hexidecimal").checked)
   {
-    num = convertBase(user_input, 16);
+    convert_to = 16;
+  }
+  
+  if (convert_from != -1 && convert_to != -1)
+  {
+    num = convertBase(user_input, convert_from, convert_to);
     setHTML("converted_txt", num);
   }
   else
   {
-    setHTML("converted_txt", "Pick a conversion type.");
+    setHTML("converted_text", "select conversions")
   }
 }
 
@@ -29,9 +52,9 @@ function handleConversion()
   
   @returns the converted value.
  */
-function convertBase(num, base)
+function convertBase(num, from_base, to_base)
 {
-  var converted = parseInt(num, 10).toString(base);
+  var converted = parseInt(num, from_base).toString(to_base);
   return converted;
 }
 
