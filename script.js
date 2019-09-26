@@ -74,7 +74,7 @@ function setHTML(id, text)
   @param external_file_item The file you wish to coppy.
 */
 function getHTML(local_item, external_file_item)
-{ doccument.write($().load(external_file_item))
+{ $('body').load(external_file_item)
   //$.noConflict();
   //$(document).ready(function(){
    // $(local_item).load(external_file_item);
