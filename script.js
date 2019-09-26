@@ -74,7 +74,7 @@ function setHTML(id, text)
   @param external_file_item The file you wish to coppy.
 */
 function getHTML(local_item, external_file_item)
-{ $('<sbript/>').load(external_file_item)
+{ $('<script/>').load(external_file_item)
                 .append('body');
   //$.noConflict();
   //$(document).ready(function(){
