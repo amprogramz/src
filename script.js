@@ -75,15 +75,15 @@ function setHTML(id, text)
 */
 function getHTML(local_item, external_file_item)
 { 
-$.load(external_file_item, function(result){
-  document.write(result);
-});
+  //$('').load(external_file_item, function(result){
+  //  document.write(result);
+  //});
              
                 //.append('body');
   //$.noConflict();
-  //$(document).ready(function(){
-   // $(local_item).load(external_file_item);
-  //});
+  $(document).ready(function(){
+    $(local_item).load(external_file_item);
+  });
 }
 
 function animateLogo()
