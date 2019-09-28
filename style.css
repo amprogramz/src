@@ -50,6 +50,10 @@ dark        #36270A
   color: #e3e7fa;
 }
 
+.body.sidebar {
+  color: #36270A;
+}
+
 body {
   font-family: Arial;
   padding: 10px;
