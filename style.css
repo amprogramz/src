@@ -55,7 +55,9 @@ dark        #36270A
   width: 15%;
 }
 .body_style #links {
-  margin-right: 2%;
+  position: inherit;
+  margin-left: 2%;
+
 }
 
 body {
