@@ -51,7 +51,7 @@ dark        #36270A
 }
 
 /* Sidebar Style */
-#side_bar {
+.body_style #sidebar {
   background-color: #000000;
   width: 15%;
 }
