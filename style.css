@@ -57,7 +57,8 @@ dark        #36270A
 }
 
 .body_style #links {
-  position: relative;
+  position: static;
+
   top: 0;
   left: 5px;
   z-index: 1;
