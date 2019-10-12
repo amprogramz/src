@@ -51,13 +51,9 @@ dark        #36270A
 }
 
 /* Sidebar Style */
-#sidebar .side_bar {
-  position: fixed;
-  top: 0px;
-  left:5px;
+#side_bar {
   background-color: #000000;
   width: 15%;
-  heithgt:100%;
 }
 .body_style #links {
   position: inherit;
@@ -87,7 +83,7 @@ a {
 }
 
 p {
-  margin-left: 2px;
+  margin-left: 2px%;
   font-size: 20px;
   text-align: justify;
   width: 60%;
