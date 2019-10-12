@@ -55,8 +55,11 @@ dark        #36270A
   background-color: #000000;
   width: 15%;
 }
+
 .body_style #links {
-  position: inherit;
+  position: fixed;
+  top: 0;
+  left: 5px;
   margin-left: 10%;
 }
 
