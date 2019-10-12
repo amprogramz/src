@@ -51,7 +51,7 @@ dark        #36270A
 }
 
 /* Sidebar Style */
-.body_style .sidebar {
+#sidebar .side_bar {
   position: fixed;
   top: 0px;
   left:5px;
