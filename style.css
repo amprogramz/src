@@ -59,7 +59,7 @@ dark        #36270A
 .body_style #links {
   /*position: static;*/
 
-  /*top: 0;*/
+  top: 0;
   /*left: 5px;*/
   /*z-index: 1;*/
   /*margin-left: 10%;*/
