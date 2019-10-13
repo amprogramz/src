@@ -57,7 +57,11 @@ dark        #36270A
     float: left;
     padding: 15px;
 }
-.column .sidebar {
+.sidebar {
+    background-color: #000000;
+    width: 15%;
+}
+.sidebar:after {
     background-color: #000000;
     width: 15%;
 }
