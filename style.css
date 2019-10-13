@@ -91,7 +91,7 @@ dark        #36270A
 }
 .body p {
       margin-left: 2px;
-      font-size: 20px;
+      font-size: 45px;
       text-align: justify;
 }
 
@@ -104,13 +104,13 @@ dark        #36270A
     clear: both;
 }
 
-/*body {*/
-/*  font-family: Arial;*/
-/*  !*padding: 10px;*!*/
-/*  background: #e3e7fa;*/
-/*  color:#34091C;*/
-/*  */
-/*}*/
+body {
+  font-family: Arial;
+  /*padding: 10px;*/
+  background: #e3e7fa;
+  color:#34091C;
+  
+}
 
 /*h1 {*/
 /*  color:#2547ef;*/
@@ -198,7 +198,7 @@ dark        #36270A
   background-color: #000000;
 }
 /* Footer styling the footer */
-.footer{  
+.footer{
   padding: 10px;
   padding-top: 20px;
   margin-top: 20px;
