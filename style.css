@@ -61,6 +61,8 @@ dark        #36270A
     background-color: #000000;
     width: 15%;
     height: 100%;
+    position: fixed;
+
 }
 /*.sidebar:after {*/
 /*    background-color: #000000;*/
