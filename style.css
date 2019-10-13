@@ -73,22 +73,13 @@ dark        #36270A
 .sidebar a:hover {
     color: #2547ef;
 }
-/*.sidebar:after {*/
-/*    background-color: #000000;*/
-/*    width: 15%;*/
-/*}*/
 .body {
     width: 80%;
-    position: relative;
+    position: ;
     padding: 15px;
 }
 .body_row {
-  /*position: static;*/
   margin-top: 0;
-
-  /*left: 5px;*/
-  /*z-index: 1;*/
-  /*margin-left: 10%;*/
 }
 .body_row:after {
     content: "";
@@ -98,7 +89,7 @@ dark        #36270A
 
 body {
   font-family: Arial;
-  padding: 10px;
+  /*padding: 10px;*/
   background: #e3e7fa;
   color:#34091C;
   
@@ -118,12 +109,12 @@ a {
   color:#2547ef;
 }
 
-p {
-  margin-left: 2px;
-  font-size: 20px;
-  text-align: justify;
-  width: 60%;
-}
+/*p {*/
+/*  margin-left: 2px;*/
+/*  font-size: 20px;*/
+/*  text-align: justify;*/
+/*  width: 60%;*/
+/*}*/
 .wrap_txt_img {
   font-size: 20px;
   text-align: justify;
