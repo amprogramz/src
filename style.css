@@ -82,19 +82,24 @@ dark        #36270A
 }
 .body a {
     color:#2547ef;
-    font-size: 45px;
+    font-size: 25px;
 }
 .body h1 {
     color:#2547ef;
-    font-size: 40px;
+    font-size: 45px;
 }
 .body h2 {
     color:#bd8617;
+    font-size: 45px;
 }
 .body p {
       margin-left: 2px;
-      font-size: 30px;
+      font-size: 25px;
       text-align: justify;
+}
+.body .wrap_txt_img img {
+    font-size: 20px;
+    text-align: justify;
 }
 
 .body_row {
@@ -134,10 +139,7 @@ body {
 /*  text-align: justify;*/
 /*  width: 60%;*/
 /*}*/
-.wrap_txt_img {
-  font-size: 20px;
-  text-align: justify;
-}
+
 
 /* Styling for the naviation menu*/
 .navbar {
