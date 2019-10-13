@@ -60,11 +60,12 @@ dark        #36270A
 .sidebar {
     background-color: #000000;
     width: 15%;
+    height: 100%;
 }
-.sidebar:after {
-    background-color: #000000;
-    width: 15%;
-}
+/*.sidebar:after {*/
+/*    background-color: #000000;*/
+/*    width: 15%;*/
+/*}*/
 .body {
     width: 80%;
 }
