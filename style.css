@@ -64,12 +64,23 @@ dark        #36270A
     position: fixed;
     overflow: hidden;
 }
+.sidebar a {
+    padding: 8px 8px 8px 8px;
+    font-size: 20px;
+    color: #e3e7fa;
+    display: block;
+}
+.sidebar a:hover {
+    color: #2547ef;
+}
 /*.sidebar:after {*/
 /*    background-color: #000000;*/
 /*    width: 15%;*/
 /*}*/
 .body {
     width: 80%;
+    position: relative;
+    padding: 15px;
 }
 .body_row {
   /*position: static;*/
