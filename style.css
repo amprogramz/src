@@ -61,7 +61,7 @@ dark        #36270A
     background-color: #000000;
     width: 15%;
     height: 100%;
-    position: fixed;
+    position: inherit;
     overflow: hidden;
 }
 .sidebar a {
@@ -75,7 +75,7 @@ dark        #36270A
 }
 .body {
     width: 80%;
-    position: ;
+    /*position: ;*/
     padding: 15px;
 }
 .body_row {
