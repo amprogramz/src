@@ -59,10 +59,10 @@ dark        #36270A
 }
 .sidebar {
     background-color: #000000;
-    text-underline-style: none;
-    width: 15%;
+    text-decoration: none;
+    width: 20%;
     height: 100%;
-    position: absolute;
+    /*position: none;*/
     overflow: hidden;
 }
 .sidebar a {
@@ -75,7 +75,7 @@ dark        #36270A
     background-color: #2547ef;
 }
 .body {
-    width: 80%;
+    width: 60%;
     /*position: ;*/
     padding: 15px;
 }
