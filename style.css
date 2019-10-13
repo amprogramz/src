@@ -62,7 +62,7 @@ dark        #36270A
     width: 15%;
     height: 100%;
     position: fixed;
-
+    overflow: hidden;
 }
 /*.sidebar:after {*/
 /*    background-color: #000000;*/
