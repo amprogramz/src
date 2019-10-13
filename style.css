@@ -51,7 +51,7 @@ dark        #36270A
 }
 
 /* Sidebar Style */
-.body_style #sidebar {
+.sidebar {
   background-color: #000000;
   width: 15%;
 }
@@ -88,7 +88,7 @@ a {
 }
 
 p {
-  margin-left: 2px%;
+  margin-left: 2px;
   font-size: 20px;
   text-align: justify;
   width: 60%;

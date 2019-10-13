@@ -15,6 +15,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -30,6 +31,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -56,7 +58,8 @@
       <workItem from="1569473258101" duration="1095000" />
       <workItem from="1569646642805" duration="9029000" />
       <workItem from="1569886714778" duration="9116000" />
-      <workItem from="1570751408588" duration="6529000" />
+      <workItem from="1570751408588" duration="7190000" />
+      <workItem from="1570937621078" duration="1572000" />
     </task>
     <servers />
   </component>
