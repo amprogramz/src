@@ -70,6 +70,7 @@ dark        #36270A
     font-size: 20px;
     color: #e3e7fa;
     display: block;
+    text-decoration: none;
 }
 .sidebar a:hover {
     background-color: #2547ef;
