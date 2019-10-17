@@ -10,6 +10,7 @@
 
   <script>
     getHTML("#header", "template.html .logosec");
+    getHTML(".sidebar", "template.html .sidebar")
     getHTML("#foot", "template.html .footer");
   </script>
 
@@ -17,7 +18,9 @@
   
 <body>
   <div id="header"></div>
-  
+  <div class="body_row">
+       <div class="sidebar"></div>
+        <div class="body">
   <h1>ASCii</h1>
   <p>
     <img src="https://cdn.glitch.com/8054e39f-4be7-4727-bc4e-c1bdcf586881%2F738px-ASCII-Table.svg.png?v=1569282804553"
@@ -105,6 +108,8 @@
   <br>
   <button onclick="handleConversion()" id="btn_convert">convert</button>
   </table>
+        </div>
+  </div>
   <div id="foot"></div>
 
 </body>
