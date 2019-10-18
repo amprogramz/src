@@ -11,12 +11,15 @@
 
     <script>
         getHTML("#header", "template.html .logosec");
+        getHTML(".sidebar", "template.html .sidebar");
         getHTML("#foot", "template.html .footer");
     </script>
 </head>
 <body>
 <div id="header"></div>
-
+<div class="body_row">
+    <div class="sidebar"></div>
+    <div class="body">
 <h1>
     Blank Media Games 2019 7.6million affected
 </h1>
@@ -117,7 +120,10 @@
         </a> ”, Secure Planet. 05/1/2018
     </ol>
 </p>
+        <div id="foot"></div>
+    </div>
+</div>
 
-<div id="foot"></div>
+
 </body>
 </html>
