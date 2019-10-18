@@ -1,116 +1,118 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Abstract Data</title>
-  
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
-  <script src="templates.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Abstract Data</title>
 
-  <script>
-    getHTML("#header", "template.html .logosec");
-    getHTML(".sidebar", "template.html .sidebar")
-    getHTML("#foot", "template.html .footer");
-  </script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="templates.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+        getHTML("#header", "template.html .logosec");
+        getHTML(".sidebar", "template.html .sidebar")
+        getHTML("#foot", "template.html .footer");
+    </script>
 
 </head>
-  
+
 <body>
-  <div id="header"></div>
-  <div class="body_row">
-       <div class="sidebar"></div>
-        <div class="body">
-  <h1>ASCii</h1>
-  <p>
-    <img src="https://cdn.glitch.com/8054e39f-4be7-4727-bc4e-c1bdcf586881%2F738px-ASCII-Table.svg.png?v=1569282804553"
-         alt="ASCII table" class="centerd_image"><a href="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/ASCII-Table.svg/738px-ASCII-Table.svg.png">wikimedia.org</a>
-  </p>
-  <h1>Numbering Systems</h1>
-  <h2>(Base 10) Decimal</h2>
-  <p>
-    Base 10 is our standard decimal numbering system. It is the numbering system that you are familiar with
-    and probably use on a day to day basis. the base 10 numbering system contains 10 charecters, hint the 
-    name base ten, which includes numbers 0-9. These then repeat themselve once it is done.
-  </p>
-  
-  <h2>(Base 2) Binary</h2>
-  <p>
-    Base 2 is the numbering system more comonly refered to as binary. Notice the root word, bi, 
-    which is the latin word for two. So as you may have guessed, this numbering system only
-    contains 2 ch, 0 and 1. Basically this can be looked at as the electrical sates inside of a 
-    computer, either they are on or off. We used this to tell the computer that something is 
-    either true or false. Now, you may be asking how do we get the number 5 with 0 and 1, well
-    that is actually quite simple. So each bit is one 1 or 0. 1 byte is composed of 8 bits. The
-    value of a bit in this byte, starting from the right, is 1, and is multiplied by two each time 
-    you progress to the left. So this makes it like this:
-    <br>
-    <br>
-    <img src="https://cdn.glitch.com/8054e39f-4be7-4727-bc4e-c1bdcf586881%2Fbinary4.png?v=1568078089657">
-    <br>
-    So knowing that this is the case, we know that our first byte has a maximum of 255 and a minimum
-    value of 0. So lets say that we want do say the number 75, we could represent this by totaling
-    up the bits that we set to true.
-    <br>
-    <br>
-    <img src="https://cdn.glitch.com/8054e39f-4be7-4727-bc4e-c1bdcf586881%2Fbinary3.png?v=1568078087025">
-    <br>
-    Therefor we now have the value of 75 in binary, but what if we wanted to do 175?
-    <br>
-    <br>
-    <img src="https://cdn.glitch.com/8054e39f-4be7-4727-bc4e-c1bdcf586881%2Fbinary2.png?v=1568078084834">
-    <br>
-    So this is simple, as long as you total the value of the bits that are true, you can read binary. 
-    <br>
-  </p>
-  
-  <h2>(Base 16) Hexidecimal</h2>
-  <p>
-    Hexidecimal is a numbering system that has a base of 16. As im sure you have already guessed,
-    how can we get 16 charecters when we only have a total on 10 using our numbering system. This
-    is true, but we also have an alphabet containing 26 charecters not including special charecters.
-    This means that we could now technically have a numbering system of base36 if we wanted to,
-    but befor we get to crazy, what does a base 16 numbering system look like.
-    <br>
-    <br>
-    <img src="https://cdn.glitch.com/8054e39f-4be7-4727-bc4e-c1bdcf586881%2FhexEx.png?v=1568073914105">
-    
-    <br>
-    <br>
-    Pretty crazy right. basically 0-15 or 0-F are used repeatedly to represent any number you want it
-    to. The advantage to using hexidecimal is that you can represent larger values with less data.
-    <br>
-           
-    <h2>Decimal to Hex/Binary Calc</h2>
+<div id="header"></div>
+<div class="body_row">
+    <div class="sidebar"></div>
+    <div class="body">
+        <h1>ASCii</h1>
+        <p>
+            <img src="https://cdn.glitch.com/8054e39f-4be7-4727-bc4e-c1bdcf586881%2F738px-ASCII-Table.svg.png?v=1569282804553"
+                 alt="ASCII table" class="centerd_image"><a
+                href="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/ASCII-Table.svg/738px-ASCII-Table.svg.png">wikimedia.org</a>
+        </p>
+        <h1>Numbering Systems</h1>
+        <h2>(Base 10) Decimal</h2>
+        <p>
+            Base 10 is our standard decimal numbering system. It is the numbering system that you are familiar with
+            and probably use on a day to day basis. the base 10 numbering system contains 10 charecters, hint the
+            name base ten, which includes numbers 0-9. These then repeat themselve once it is done.
+        </p>
 
-  <p id="converted_txt">Enter a decimal value to convert.</p>
+        <h2>(Base 2) Binary</h2>
+        <p>
+            Base 2 is the numbering system more comonly refered to as binary. Notice the root word, bi,
+            which is the latin word for two. So as you may have guessed, this numbering system only
+            contains 2 ch, 0 and 1. Basically this can be looked at as the electrical sates inside of a
+            computer, either they are on or off. We used this to tell the computer that something is
+            either true or false. Now, you may be asking how do we get the number 5 with 0 and 1, well
+            that is actually quite simple. So each bit is one 1 or 0. 1 byte is composed of 8 bits. The
+            value of a bit in this byte, starting from the right, is 1, and is multiplied by two each time
+            you progress to the left. So this makes it like this:
+            <br>
+            <br>
+            <img src="https://cdn.glitch.com/8054e39f-4be7-4727-bc4e-c1bdcf586881%2Fbinary4.png?v=1568078089657">
+            <br>
+            So knowing that this is the case, we know that our first byte has a maximum of 255 and a minimum
+            value of 0. So lets say that we want do say the number 75, we could represent this by totaling
+            up the bits that we set to true.
+            <br>
+            <br>
+            <img src="https://cdn.glitch.com/8054e39f-4be7-4727-bc4e-c1bdcf586881%2Fbinary3.png?v=1568078087025">
+            <br>
+            Therefor we now have the value of 75 in binary, but what if we wanted to do 175?
+            <br>
+            <br>
+            <img src="https://cdn.glitch.com/8054e39f-4be7-4727-bc4e-c1bdcf586881%2Fbinary2.png?v=1568078084834">
+            <br>
+            So this is simple, as long as you total the value of the bits that are true, you can read binary.
+            <br>
+        </p>
 
-  <input type="number" id="input_num" >
-  <br>
-  <table>
-    <tr>
-      <th>Convert From</th>
-      <th>Convert To  </th>
-    </tr>
-    <tr>
-      <td><input type="radio" name="type" id="decimal_from">decimal</td>
-      <td><input type="radio" name="type2" id="decimal">decimal</td>
-    </tr>
-    <tr>
-      <td><input type="radio" name="type" id="binary_from">binary</td>
-      <td><input type="radio" name="type2" id="binary">binary</td>
-    </tr>
-    <tr>
-      <td><input type="radio" name="type" id="hexidecimal_from">hexidecimal</td>
-      <td><input type="radio" name="type2" id="hexidecimal">hexidecimal</td>
-    </tr>
-  </table>
-  <br>
-  <button onclick="handleConversion()" id="btn_convert">convert</button>
-  </table>
+        <h2>(Base 16) Hexidecimal</h2>
+        <p>
+            Hexidecimal is a numbering system that has a base of 16. As im sure you have already guessed,
+            how can we get 16 charecters when we only have a total on 10 using our numbering system. This
+            is true, but we also have an alphabet containing 26 charecters not including special charecters.
+            This means that we could now technically have a numbering system of base36 if we wanted to,
+            but befor we get to crazy, what does a base 16 numbering system look like.
+            <br>
+            <br>
+            <img src="https://cdn.glitch.com/8054e39f-4be7-4727-bc4e-c1bdcf586881%2FhexEx.png?v=1568073914105">
+
+            <br>
+            <br>
+            Pretty crazy right. basically 0-15 or 0-F are used repeatedly to represent any number you want it
+            to. The advantage to using hexidecimal is that you can represent larger values with less data.
+            <br>
+
+        <h2>Decimal to Hex/Binary Calc</h2>
+
+        <p id="converted_txt">Enter a decimal value to convert.</p>
+
+        <input type="number" id="input_num">
+        <br>
+        <table>
+            <tr>
+                <th>Convert From</th>
+                <th>Convert To</th>
+            </tr>
+            <tr>
+                <td><input type="radio" name="type" id="decimal_from">decimal</td>
+                <td><input type="radio" name="type2" id="decimal">decimal</td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="type" id="binary_from">binary</td>
+                <td><input type="radio" name="type2" id="binary">binary</td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="type" id="hexidecimal_from">hexidecimal</td>
+                <td><input type="radio" name="type2" id="hexidecimal">hexidecimal</td>
+            </tr>
+        </table>
+        <br>
+        <button onclick="handleConversion()" id="btn_convert">convert</button>
+        </table>
+        <div id="foot"></di
         </div>
-  </div>
-  <div id="foot"></div>
+    </div>
+    v>
 
 </body>
 </html>
