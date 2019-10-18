@@ -1,75 +1,81 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Protocols</title>
-  
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
-  <script src="templates.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Protocols</title>
 
-  <script>
-    getHTML("#header", "template.html .logosec");
-    getHTML("#foot", "template.html .footer");
-    animateLogo();
-  </script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="templates.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+        getHTML("#header", "template.html .logosec");
+        getHTML("#foot", "template.html .footer");
+        animateLogo();
+    </script>
 </head>
-  
+
 <body>
 
-  <!-- Header Start-->
-  <div id="header"></div>
-  
-  <h1>Protocols</h1>
-  <h2>Basics</h2>
-  <p>
-    Protocols are the things that make internet comunication possible. These define the ways
-    we send data, and connect to other computers.
-  </p>
-  
-  <h2>IPv4</h2>
-  <p>
-    This is the most common addressing that we use to link networks. Alot like houses, which have
-    a physical address, computers use the IPv4 addressing scheme. These addresses are composed 
-    of 4 8 bit numbers. Basically, these addresses range from 0.0.0.0 to 255.255.255.255, google 
-    is 8.8.8.8 or 4.4.4.4 . The big delima was that we were going to run out of possible ip addresses
-    which led to the creation of IPv6, however, this also led to the invention of private addressing
-    within IPv4. This led to reserving the addresses for class A networks 10.0.0.0 - 10.255.255.255 
-    with subnet mask 255.0.0.0, class B networks 172.16.0.0 - 172.36.255.255 with subnet mask 255.255.0.0,
-    and class C networks 192.168.0.0 - 192.168.255.255 with subnet mask 255.255.255.0 . The invention of 
-    these addressing schemes allow us to create private networks, meaning that nobody is going to connect
-    to these networks except for those internal to this network. This way we can now support thousands of 
-    connections under 1 external IP address that connects to the world. So truly we havent ran out of IP 
-    addresses yet, even though they are all owned.
-  </p>
-  <h2>IPv6</h2>
-  <p>
-  </p>
-  <h2>TCP Transmission Control Protocol</h2>
-  <p>
-    TCP is responsible for packing up data to send over the internet. It breaks down the data into packets 
-    and packs them up with an ip address, and is responsible  for reassembling the data once it reaches its
-    destination. 
-  </p>
-  <h2>DNS</h2>
-  <p>
-    DNS stands for the Domain Naming Service. This protocol is responsible for translating IP addresses into
-    a readable name, like google.com wich is translated to 8.8.8.8. Domain names can be purchaced and sold,
-    however, they can only be used once, so this has the potential to make them really valuable.
-  </p>
-  <h2>HTTP and HTTPS</h2>
-  <p>
-    HTTP stand for the Hyper Text Transfer Protocol. This is used to . The "S" in HTTPS stands for "secure".
-    This protocol uses encryption.
-  </p>
-  <h2></h2>
-  <h2>Symetric vs Asemetric encryption</h2>
-  <p>
-    Symetric encryption utilizes a single shared key, while asemetric encryption utilizes a public key and a secret key. 
-  </p>
-    
-  
-  <div id="foot"></div>
-  
+<!-- Header Start-->
+<div id="header"></div>
+<div class="body_row">
+    <div class="sidebar"></div>
+    <div class="body">
+
+        <h1>Protocols</h1>
+        <h2>Basics</h2>
+        <p>
+            Protocols are the things that make internet comunication possible. These define the ways
+            we send data, and connect to other computers.
+        </p>
+
+        <h2>IPv4</h2>
+        <p>
+            This is the most common addressing that we use to link networks. Alot like houses, which have
+            a physical address, computers use the IPv4 addressing scheme. These addresses are composed
+            of 4 8 bit numbers. Basically, these addresses range from 0.0.0.0 to 255.255.255.255, google
+            is 8.8.8.8 or 4.4.4.4 . The big delima was that we were going to run out of possible ip addresses
+            which led to the creation of IPv6, however, this also led to the invention of private addressing
+            within IPv4. This led to reserving the addresses for class A networks 10.0.0.0 - 10.255.255.255
+            with subnet mask 255.0.0.0, class B networks 172.16.0.0 - 172.36.255.255 with subnet mask 255.255.0.0,
+            and class C networks 192.168.0.0 - 192.168.255.255 with subnet mask 255.255.255.0 . The invention of
+            these addressing schemes allow us to create private networks, meaning that nobody is going to connect
+            to these networks except for those internal to this network. This way we can now support thousands of
+            connections under 1 external IP address that connects to the world. So truly we havent ran out of IP
+            addresses yet, even though they are all owned.
+        </p>
+        <h2>IPv6</h2>
+        <p>
+        </p>
+        <h2>TCP Transmission Control Protocol</h2>
+        <p>
+            TCP is responsible for packing up data to send over the internet. It breaks down the data into packets
+            and packs them up with an ip address, and is responsible for reassembling the data once it reaches its
+            destination.
+        </p>
+        <h2>DNS</h2>
+        <p>
+            DNS stands for the Domain Naming Service. This protocol is responsible for translating IP addresses into
+            a readable name, like google.com wich is translated to 8.8.8.8. Domain names can be purchaced and sold,
+            however, they can only be used once, so this has the potential to make them really valuable.
+        </p>
+        <h2>HTTP and HTTPS</h2>
+        <p>
+            HTTP stand for the Hyper Text Transfer Protocol. This is used to . The "S" in HTTPS stands for "secure".
+            This protocol uses encryption.
+        </p>
+        <h2></h2>
+        <h2>Symetric vs Asemetric encryption</h2>
+        <p>
+            Symetric encryption utilizes a single shared key, while asemetric encryption utilizes a public key and a
+            secret key.
+        </p>
+
+
+        <div id="foot"></div>
+    </div>
+</div>
+
 </body>
 </html>
