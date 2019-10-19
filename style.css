@@ -102,7 +102,7 @@ dark        #36270A
 .body .wrap_txt_img img {
     font-size: 20px;
     text-align: justify;
-    margin-top: inherit;
+    margin-top: 10px;
 }
 
 .body_row {
