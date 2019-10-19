@@ -1,7 +1,6 @@
 /*
   CSS Style Sheet
   edited_by:  Alec McDaugale
-  created_by: Deb Harding
 */
 /* 
 The styles are based on the complementary color scheme
@@ -97,6 +96,8 @@ dark        #36270A
       margin-left: 2px;
       font-size: 25px;
       text-align: justify;
+    margin-top: 0px;
+    margin-bottom: 5px;
 }
 .body .wrap_txt_img img {
     font-size: 20px;
