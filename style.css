@@ -102,6 +102,7 @@ dark        #36270A
 .body .wrap_txt_img img {
     font-size: 20px;
     text-align: justify;
+    margin-top: inherit;
 }
 
 .body_row {
@@ -120,27 +121,6 @@ body {
   color:#34091C;
 
 }
-
-/*h1 {*/
-/*  color:#2547ef;*/
-/*  width: 80%;*/
-/*}*/
-
-/*h2 {*/
-/*  color:#bd8617;*/
-/*  width: 80%;*/
-/*}*/
-
-/*a {*/
-/*  color:#2547ef;*/
-/*}*/
-
-/*p {*/
-/*  margin-left: 2px;*/
-/*  font-size: 20px;*/
-/*  text-align: justify;*/
-/*  width: 60%;*/
-/*}*/
 
 
 /* Styling for the naviation menu*/
