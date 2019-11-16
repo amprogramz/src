@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Analysis Project</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="import" href="includedContent">
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+        getHTML("#header", "template.html .logosec");
+        getHTML(".sidebar", "template.html .sidebar");
+        getHTML("#foot", "template.html .footer");
+    </script>
+</head>
+<body>
+<div id="header"></div>
+<div class="body_row">
+    <div class="sidebar"></div>
+    <div class="body">
+        <h1>Data Analysis Project</h1>
+        <h2>Questions:</h2>
+
+        <div>
+            <li>What was the most common password?</li>
+            <li>How many passwords were present on both sites?</li>
+            <li>3. What is the revised list of passwords and their combine repetitions, and how do they rank from most
+                common to least?
+            </li>
+        </div>
+
+        <h2>Description of data:</h2>
+        <p>
+            For my data sets I chose to analyze the 50 most common passwords between two websites, PHPbb and
+            Singles.com. The data came from
+            <a href="https://blog.jimmyr.com/Password_analysis_of_databases_that_were_hacked_28_2009.php">
+                https://blog.jimmyr.com/Password_analysis_of_databases_that_were_hacked_28_2009.php</a>
+            A more extensive list of passwords can be found at:
+            <a href="https://github.com/danielmiessler/SecLists">https://github.com/danielmiessler/SecLists</a>
+            However, for simplicity, I chose to use a small set of data for the assignment. In order to get the data I
+            ran into some difficulties finding a good data set that was in csv format, an my guess would be that the
+            reason it is harder to find would be that this data is somewhat sensitive in nature. This website in
+            particular mentioned that these were collected when the sites got hacked by hackers, and that these were
+            only the most common ones. All of the data was in tables; however, no csv file was available for download,
+            or I was unable to find one in the time I spent searching. So, I created by own csv format by copying the
+            text into a text file, I used the bash command,
+            “cat ~/Documents/passSingles | sed 's/[[:blank:]]/,/g' | tee ~/Documents/passSingles.csv”
+            to convert it to a comma separated value format, and finally saved each one with a .csv file extension. .
+            The ironic part was that after I finished my analysis, I read on google that they also accept a tab
+            separated value list, which means that simply copying the text and leaving it as it was would have been
+            sufficient to generate a spreadsheet.
+
+        </p>
+
+        <h2>Development process:</h2>
+        <p>This conversion worked to import it into google docs, where I taught myself how to use their online
+            spreadsheet tool. It was somewhat difficult at first to get started, because I have never used google docs
+            before, only excel. The hardest part was figuring out how to open up two files in the same tab. Once I
+            figured this out, the rest was pretty self-explanatory. I created a table where I joined the data from both
+            tables. On this table I was able to do all of the calculations and sums to create pivot tables which present
+            the conclusions. I first created a column that would detect if a password was present on both sites by
+            sorting the password column, and comparing the password above and below the column. I then made another
+            column that would total the total repetitions for both sites if both sites were present. I also created a
+            column that would just list total repetitions if a password was uniqe to a site, else the number is 0. With
+            this data I generated, I was able to answer the questions I formulated above about the data on pivot
+            tables.</p>
+        <h2>. Findings:</h2>
+        <p>Through this exercise I found that the most common password was 123456 in first place, and in second was
+            password. My guess here is that a majority of people assume that using the simplest password may either be
+            easy to remember, or that maybe it is more secure due to the fact that it is so obvious. I also found out
+            that there were 13 out of 87 passwords that were common across both sites. This implies that these passwords
+            are probably the best ones to avoid using, as they are most likely common across many sites and not only
+            these sites in particular. You may have noticed that I mentioned that this was out of 87 passwords, and
+            originally, I mentioned that there were two lists of 50 passwords which would imply that this is out of a
+            hundred passwords? This is due to the fact that 13 of them were used on both sites, and since 87 = 100 – 13,
+            that is why it is no longer out of a hundred. The last finding is the revised list of 87 passwords and their
+            total repetitions totaled up from both sites, which can be observed in the graph I have generated.</p>
+        <h2>Recommendations:</h2>
+        <p>The first and most important recommendation that I would have is that if your password is present on this
+            list, you should seriously consider changing it. Do not make the assumption that because your password is so
+            simple, that it actually makes it more secure. This is a common misconception that many people have told me
+            in their reasoning. The reason being is that these lists exist, and with a simple script, anyone could break
+            your password in a matter of seconds if it exists on these lists. So, if you or anyone you know desire to
+            keep your data secure, I strongly recommend creating a password of at least 10 characters using a
+            combination of numbers, letters, and symbols to avoid falling victim to a hacker. It also never hurts to
+            check if your password exists among one of these lists, and if it does, seriously, change it.</p>
+
+        <div id="foot"></div>
+    </div> <!-- end body -->
+</div> <!-- end body_row -->
+
+</body>
+</html>
