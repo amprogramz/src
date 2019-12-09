@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Final Project</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="import" href="includedContent">
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+        getHTML("#header", "template.html .logosec");
+        getHTML(".sidebar", "template.html .sidebar");
+        getHTML("#foot", "template.html .footer");
+    </script>
+</head>
+<body>
+    <div id="header"></div>
+    <div class="body_row">
+        <div class="sidebar"></div>
+        <div class="body">
+
+            <video width="100%" controls>
+                <source src="https://cdn.glitch.com/b7d9ff12-6147-4c89-9aec-7d699b99639b%2FFinalProject2.mp4?v=1575905229892"
+                        type="video/mp4">
+            </video>
+
+            <br><br>
+            <p>Src code is available at <a href="https://github.com/amprogramz/WebAuth">https://github.com/amprogramz/WebAuth</a> </p>
+
+            <div id="foot"></div>
+        </div>
+    </div>
+
+</body>
+</html>
